@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday My Love 💕</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Floating petals -->
+  <div class="petal-container" id="petalContainer"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">for you, always</p>
+      <h1 class="hero-title">
+        <span class="line1">Happy</span>
+        <span class="line2">Birthday</span>
+        <span class="line3">My Love</span>
+      </h1>
+      <p class="hero-subtitle">Every moment with you is a gift I never stop unwrapping.</p>
+      <div class="scroll-hint">
+        <span>scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOVE LETTER -->
+  <section class="letter-section" id="letter">
+    <div class="letter-wrapper" data-animate>
+      <div class="letter-decoration top-left">✦</div>
+      <div class="letter-decoration top-right">✦</div>
+      <p class="letter-label">a letter, for you</p>
+      <div class="letter-body">
+        <p class="salutation">My Dearest,</p>
+        <p>There are not enough words in every language I know to describe what you mean to me. You are the warmth on a cold morning, the laughter that fills a quiet room, the hand I reach for in the dark.</p>
+        <p>Watching you grow, seeing the way you move through this world with such grace and fire — it takes my breath away, every single day. You make everything more vivid. More worth it.</p>
+        <p>On this birthday, I don't just celebrate the day you were born. I celebrate every version of you I've had the privilege of knowing. The you who is still becoming. The you who already is everything.</p>
+        <p>I hope this year brings you joy so full it spills over. I hope it brings you peace, adventure, and every small delight you deserve. And I hope, somewhere in the middle of it all, you feel how deeply, completely loved you are.</p>
+        <p class="closing">Forever yours,<br/><em>with all of my heart ♡</em></p>
+      </div>
+      <div class="letter-decoration bottom-left">✦</div>
+      <div class="letter-decoration bottom-right">✦</div>
+    </div>
+  </section>
+
+  <!-- OUR MOMENTS GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-header">
+      <p class="section-label">snapshots of us</p>
+      <h2 class="section-title">Our Moments</h2>
+    </div>
+    <div class="gallery-grid">
+
+      <!-- PHOTO 1 — place your image in the pictures/ folder and update the filename -->
+      <div class="photo-card" data-animate>
+        <img src="pictures/paru1.jpeg" alt="Our moment" loading="lazy" />
+      </div>
+
+      <!-- PHOTO 2 -->
+      <div class="photo-card" data-animate>
+        <img src="pictures/paru2.jpeg" alt="Our moment" loading="lazy" />
+      </div>
+
+      <!-- PHOTO 3 -->
+      <div class="photo-card" data-animate>
+        <img src="pictures/paru3.jpeg" alt="Our moment" loading="lazy" />
+      </div>
+
+      <!-- PHOTO 4 -->
+      <div class="photo-card" data-animate>
+        <img src="pictures/paru4.jpeg" alt="Our moment" loading="lazy" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SURPRISE BUTTON -->
+  <section class="surprise-section" id="surprise">
+    <div class="surprise-content">
+      <p class="section-label">one last thing...</p>
+      <h2 class="section-title">A Little Surprise</h2>
+      <p class="surprise-hint">Press the button when you're ready 🌸</p>
+      <button class="surprise-btn" id="surpriseBtn" onclick="revealSurprise()">
+        <span class="btn-text">Open Your Gift</span>
+        <span class="btn-icon">🎁</span>
+      </button>
+    </div>
+
+    <!-- Hidden message overlay -->
+    <div class="surprise-overlay" id="surpriseOverlay">
+      <div class="surprise-message" id="surpriseMessage">
+        <button class="close-btn" onclick="closeSurprise()">✕</button>
+        <div class="message-hearts" id="messageHearts"></div>
+        <div class="message-inner">
+          <p class="message-label">your surprise</p>
+          <h3>A Promise 💕</h3>
+          <p>For every birthday to come, I promise you:</p>
+          <ul class="promise-list">
+            <li>🌹 A thousand reasons to smile</li>
+            <li>🌙 Someone to hold through every storm</li>
+            <li>☀️ Adventures we haven't dreamed of yet</li>
+            <li>💌 Love letters when you least expect them</li>
+            <li>🍰 Always, always, the first slice of cake</li>
+          </ul>
+          <p class="message-footer">Happy Birthday. I love you beyond measure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Made with love, just for you 💕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
